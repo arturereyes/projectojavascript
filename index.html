@@ -4,7 +4,37 @@
 </head>
 <body>
 
-Hola mundo
+<script type="text/javascript">
+
+	function ciclo (hasta){
+		var contador = 0;   
+		var nombre = "Arturo Reyes"; 
+			console.log(nombre);
+			alert (nombre);	
+	//for (var i = 1; i <=hasta; i++){
+		contador = (hasta + 1) * (hasta /2);
+				
+		console.log (contador);
+	//}
+			
+		}; 
+		
+ciclo (100000000); 
+	
+		function recorrer () {
+			var numero = document.getElementById("numero").value;
+			//console.log (numero);
+			ciclo (numero);
+		};
+	
+</script>
+</head>
+</body>
+
+<input id="numero">
+
+<button onclick="recorrer();">Correr</button>
 
 </body>
+
 </html>
